@@ -1,79 +1,96 @@
-🛡️ CodeSentinel AI
+CodeSentinel AI 🛡️
 
-CodeSentinel AI is an intelligent code-review platform designed to analyze source code for potential bugs, security vulnerabilities, performance issues, anti-patterns, and code-quality problems.
+An intelligent, instant code-review tool that analyzes source code for security vulnerabilities, runtime bugs, performance bottlenecks, and style antipatterns. Built with a responsive split-pane interface and an automated rule-matching static analysis engine with optional LLM integration.
 
-It provides developers with actionable feedback through an easy-to-use web interface and supports both a local heuristic analysis engine and optional LLM-powered reviews using OpenAI or Gemini.
+🚀 Live Demo
 
-🚀 Live Demo:-https://sentinelcode.netlify.app/
-
-CodeSentinel AI
+Hosted URL:https://sentinelcode.netlify.app/
 
 ✨ Features
-🔍 Intelligent Code Review
 
-Paste your source code into the editor and run an automated review to identify potential issues.
+Split-Pane Architecture: Synchronized line-numbered code editor on the left with categorized issue findings on the right.
 
-The analyzer categorizes findings into:
+Categorized Issue Severity:
 
-🔴 Critical — Bugs and security vulnerabilities
+🔴 Critical: Direct bugs, SQL/XSS injections, arbitrary execution risks (eval), and hardcoded secrets.
 
-🟡 Warnings — Anti-patterns and potentially problematic code
+🟡 Warning: Resource leaks, unhandled exceptions, and blocking synchronous calls.
 
-🔵 Info — Performance-related observations
+🔵 Info: Algorithmic complexity warnings ($O(N^2)$ loops) and loose equality pitfalls.
 
-🟢 Suggestions — Code style and cleanliness improvements
+🟢 Suggestion: Clean code idioms, modern syntax usage (let/const over var), and formatting.
 
-🤖 AI-Powered Analysis
+Dynamic Metrics Bar: Instant calculation of an overall Code Health Score alongside severity counters.
 
-CodeSentinel provides two analysis approaches:
+Actionable Remediation: Displays line-specific before/after diff snippets with one-click copy support.
 
-Local Heuristic Engine — Performs rule-based analysis without consuming API tokens.
+Zero-Latency Offline Mode: Inspects code instantly in-browser without sending your proprietary code to third-party servers by default.
 
-OpenAI Integration — Enables LLM-backed code analysis.
+BYOK (Bring Your Own Key) Support: Optional live inference toggle for Google Gemini and OpenAI models.
 
-Gemini Integration — Provides an alternative LLM-based review engine.
+🛠️ Tech Stack
 
-💻 Multi-Language Support
+Frontend & Core Engine
 
-The interface allows users to select the programming language before performing a review, making the platform suitable for analyzing different types of source code.
+Layer
 
-🧹 Code Utilities
+Technology
 
-The application includes utilities such as:
+Details
 
-Clear editor
+Markup & Layout
 
-Trim unnecessary whitespace
+HTML5
 
-Load vulnerable sample code for testing
+Semantic structure with accessibility attributes
 
-📊 Code Health Dashboard
+Styling
 
+Tailwind CSS & Modern CSS3
 
-After a review, the dashboard presents an overview of the code's health, including counts for:
+Responsive dark mode theme, custom scrollbars, and diff states
 
-Bugs & Security
+Logic & Interactivity
 
-Anti-patterns
+Vanilla JavaScript (ES6+)
 
-Performance
+Line syncing, event handling, dynamic UI rendering
 
-Style & Cleanliness
+Iconography
 
-⚡ Complexity & Security Checks
+Lucide Icons
 
-The analyzer can inspect code for patterns related to:
+Clean SVG UI indicators
 
-Security injections
+Typography
 
-Memory-related issues
+Google Fonts
 
-Algorithmic complexity
+Inter for interface UI, Fira Code for monospace editor
 
-Potential bugs
+Optional Cloud AI Providers
 
-Poor coding practices
+Google Gemini API: gemini-2.5-flash for automated code explanations
 
+OpenAI API: gpt-4o-mini with structured JSON schema outputs
+
+Hosting & Deployment
+
+Platform: Netlify (Continuous Deployment via Git / Netlify Drop)
+
+⌨️ Shortcuts
+
+Shortcut
+
+Action
+
+Ctrl + Enter / Cmd + Enter
+
+Trigger immediate code review
+
+Tab
+
+Insert 4-space indentation within the editor
 🛠️ How It Works
 
 The basic workflow is:
