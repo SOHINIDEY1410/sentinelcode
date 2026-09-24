@@ -29,14 +29,18 @@ Zero-Latency Offline Mode: Inspects code instantly in-browser without sending yo
 BYOK (Bring Your Own Key) Support: Optional live inference toggle for Google Gemini and OpenAI models.
 
 🛠️ Tech Stack
-Frontend & Core Engine
-Layer	              Technology	                             Details
-Markup & Layout 	HTML5	               Semantic structure with accessibility attributes
-Styling	Tailwind    CSS & Modern CSS3	       Responsive dark mode theme, custom scrollbars, and diff states
-Logic & 
-Interactivity	  Vanilla JavaScript (ES6+)    Line syncing, event handling, dynamic UI rendering
-Iconography	     Lucide Icons	       Clean SVG UI indicators
-Typography	     Google Fonts	       Inter for interface UI, Fira Code for monospace editor
+
+Frontend & Core Engine	
+
+Markup & Layout :HTML5	- Semantic structure with accessibility attributes
+
+Styling	Tailwind :CSS & Modern CSS3-Responsive dark mode theme, custom scrollbars, and diff states
+
+Logic & Interactivity:Vanilla JavaScript (ES6+)-Line syncing, event handling, dynamic UI rendering
+
+Iconography:Lucide Icons-Clean SVG UI indicators
+
+Typography:Google Fonts-Inter for interface UI, Fira Code for monospace editor
 
 
 Optional Cloud AI Providers
