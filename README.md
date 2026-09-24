@@ -29,44 +29,15 @@ Zero-Latency Offline Mode: Inspects code instantly in-browser without sending yo
 BYOK (Bring Your Own Key) Support: Optional live inference toggle for Google Gemini and OpenAI models.
 
 🛠️ Tech Stack
-
 Frontend & Core Engine
+Layer	              Technology	                             Details
+Markup & Layout 	HTML5	               Semantic structure with accessibility attributes
+Styling	Tailwind    CSS & Modern CSS3	       Responsive dark mode theme, custom scrollbars, and diff states
+Logic & 
+Interactivity	  Vanilla JavaScript (ES6+)    Line syncing, event handling, dynamic UI rendering
+Iconography	     Lucide Icons	       Clean SVG UI indicators
+Typography	     Google Fonts	       Inter for interface UI, Fira Code for monospace editor
 
-Layer
-
-Technology
-
-Details
-
-Markup & Layout
-
-HTML5
-
-Semantic structure with accessibility attributes
-
-Styling
-
-Tailwind CSS & Modern CSS3
-
-Responsive dark mode theme, custom scrollbars, and diff states
-
-Logic & Interactivity
-
-Vanilla JavaScript (ES6+)
-
-Line syncing, event handling, dynamic UI rendering
-
-Iconography
-
-Lucide Icons
-
-Clean SVG UI indicators
-
-Typography
-
-Google Fonts
-
-Inter for interface UI, Fira Code for monospace editor
 
 Optional Cloud AI Providers
 
@@ -78,19 +49,6 @@ Hosting & Deployment
 
 Platform: Netlify (Continuous Deployment via Git / Netlify Drop)
 
-⌨️ Shortcuts
-
-Shortcut
-
-Action
-
-Ctrl + Enter / Cmd + Enter
-
-Trigger immediate code review
-
-Tab
-
-Insert 4-space indentation within the editor
 🛠️ How It Works
 
 The basic workflow is:
@@ -120,26 +78,6 @@ Categorize findings
 Display actionable feedback
 
 The local analysis engine can provide feedback without sending code to an external LLM.
-CodeSentinel AI can be useful for:
-
-👨‍💻 Developers reviewing code before deployment
-
-🎓 Students learning secure coding practices
-
-🔐 Identifying common security vulnerabilities
-
-⚡ Finding potential performance bottlenecks
-
-🧹 Improving code readability and maintainability
-
-📚 Learning from automated code-review feedback
-
-🔑 AI Provider Configuration
 
 
-For LLM-powered analysis, users can optionally configure:
 
-OpenAI API
-Google Gemini API
-
-API credentials should be kept private and should never be committed directly to the repository.
